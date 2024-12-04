@@ -1,4 +1,6 @@
+mod languages;
 mod project_finder;
+mod ui;
 
 use project_finder::find_project_files;
 
@@ -9,7 +11,17 @@ fn main() -> anyhow::Result<()> {
     let projects = find_project_files(&root_dirs)?;
 
     for project in projects {
-        println!("{:?}", project);
+        match languages::Language::from_name(&project.language) {
+            Some(lang) => {
+                println!("{} {}", lang.icon, project.name);
+            }
+
+            None => {
+                println!("  {}", project.name);
+            }
+        }
     }
+
+    let _ = ui::main();
     Ok(())
 }

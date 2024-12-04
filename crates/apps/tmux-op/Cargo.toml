@@ -6,8 +6,10 @@ authors.workspace = true
 
 [dependencies]
 anyhow = "1.0.93"
+crossterm = "0.28.1"
 dirs = "5.0.1"
 ignore = "0.4.23"
+ratatui = "0.29.0"
 rayon = "1.10.0"
 serde = {version = "1.0.215", features = ["derive"]}
 serde_json = "1.0.133"
