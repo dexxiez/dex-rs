@@ -7,7 +7,7 @@ use std::{
     path::{Path, PathBuf},
 };
 
-const IGNORED_DIRS: [&str; 4] = ["node_modules", "build", "target", "dist"];
+const IGNORED_DIRS: [&str; 5] = ["node_modules", "build", "target", "dist", "out"];
 
 #[derive(Debug, Deserialize)]
 pub struct ProjectConfig {

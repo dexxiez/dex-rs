@@ -5,7 +5,7 @@ pub struct Language {
     pub icon: &'static str,
 }
 
-pub static LANGUAGES: LazyLock<[Language; 6]> = LazyLock::new(|| {
+pub static LANGUAGES: LazyLock<[Language; 7]> = LazyLock::new(|| {
     [
         Language {
             names: vec!["C"],
@@ -30,6 +30,10 @@ pub static LANGUAGES: LazyLock<[Language; 6]> = LazyLock::new(|| {
         Language {
             names: vec!["Go"],
             icon: "󰟓",
+        },
+        Language {
+            names: vec!["Rust"],
+            icon: "󱘗",
         },
     ]
 });

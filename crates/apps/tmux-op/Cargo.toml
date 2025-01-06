@@ -8,8 +8,11 @@ authors.workspace = true
 anyhow = "1.0.93"
 crossterm = "0.28.1"
 dirs = "5.0.1"
+fuzzy-matcher = "0.3.7"
 ignore = "0.4.23"
 ratatui = "0.29.0"
 rayon = "1.10.0"
 serde = {version = "1.0.215", features = ["derive"]}
 serde_json = "1.0.133"
+toml = "0.8.19"
+unicode-width = "0.2.0"
